@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+    <html lang="en" ng-app="MyPage">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kassandra Ortega</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+        </head>
+    <body>
+        <div class="top-container"> 
+            <nav>
+                <ul>
+                    <li><a href="#welcome-section">Welcome</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#skills-section">Skills</a></li>
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="#experience-references-section">Experience & References</a></li>
+                    <li><a href="#contact-and-links-section">Contact & Links</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="dropdown" onclick="myFunction(this)"> 
+            <div class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="dropdown-content">
+                <a href="#welcome-section">Welcome</a>
+                <a href="#about-section">About</a>
+                <a href="#skills-section">Skills</a>
+                <!-- <a href="#">Portfolio</a> -->
+                <a href="#experience-references-section">Experience & References</a>
+                <a href="#contact-and-links-section">Contact</a>
+            </div>
+        </div>
+
+        <div class="middle-container">
+
+            <section id="welcome-section">
+                <div class="profile">
+                    <h1>I'm Kassie.</h1>
+                    <h2> a <span class="pro">full stack</span> software engineer</h2>
+                    <img class="me" src="images/me.png" alt="kas-img">
+                    <h2>Welcome!</h2>
+                    <h3>
+                        Bachelor of Science in Computer Science 
+                        <br>
+                        Software Developer and Consultant
+                    </h3>
+                    <p class="talk">
+                        I always enjoyed solving puzzles and riddles; anything that turned the wheels in my brain. Coding 
+                        is just like solving a puzzle, except with a visible and thrilling result. And I could solve any 
+                        problems with this knowledge. I could create any page I could think of; a combination of my creativity 
+                        and programming techniques. That is why, ever since my first computer science class in high school, 
+                        I knew I would choose a career in this field. 
+                    </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="about-section">
+                <div class="about">
+                    <h2>About Me</h2>
+                    <div class="about-row">
+                        <img class="notClouds-left" src="images/web-development.png" alt="web-dev-img">
+                        <h3>Web Development</h3>
+                        <p>
+                            I am a web developer; someone who is responsible for the design and construction of websites.
+                            I ensure that sites meet a user's expectations. How? By ensuring they look good, run smoothly, and 
+                            offer easy access points with no loading issues between pages or error messages.
+                        </p>
+                    </div>
+                    <div class="about-row">
+                        <img class="notClouds-right" src="images/development.png" alt="mob-dev-img">
+                        <h3>Mobile Development</h3>
+                        <p>
+                            I am a certified mobile programmer; I specialize in mobile technology, building apps for Android, 
+                            iOS, and Microsoft's phone platforms. I can design and build the next generation of our mobile applications.
+                        </p>
+                    </div>
+                    <div class="about-row">
+                        <img class="notClouds-left" src="images/illustration.png" alt="graphic-des-img">
+                        <h3>Graphic Design</h3>
+                        <p>
+                            I am an artist; outside of coding, I spend my time creating digital art for fun or for other projects
+                            I have in mind. At the moment, I am using placeholder images created by other talented people before
+                            inserting my own work.
+                        </p>
+                    </div>
+                    <div class="about-row">
+                        <img class="notClouds-right" src="images/web.png" alt="java-img">
+                        <h3>Game Development</h3>
+                        <p>
+                            I am a video game developer; I help transform games, for fun or educatrional purposes, from a concept to a
+                            playable reality. How? By coding visual elements, programming features, and testing iterations until a 
+                            game is ready for market. 
+                        </p>
+                    </div>
+                    <!-- <div class="about-row">
+                        <img class="notClouds-right" src="images/web.png" alt="java-img">
+                        <h3>Java Backend Development</h3>
+                        <p>
+                            I am in love with Java; this was the first coding language I was exposed to. It began my interest, 
+                            followed me into my career, and led me to broaden my horizons in the developer world. This is by far 
+                            my strongest skill. 
+                        </p>
+                    </div> -->
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="skills-section">
+                <div class="table-header table-h2">
+                    <table>
+                        <tr>
+                            <td>
+                                Technical Skills
+                            </td>
+                            <td>
+                                <div id="search-body">
+                                    <div class="input-box">
+                                        <input id="user-search-input" type="text" placeholder="Search" onkeyup="searchSkills()"/>
+                                        <span class="search">
+                                          <i class="uil uil-search search-icon"></i>
+                                        </span>
+                                        <i class="uil uil-times close-icon"></i>
+                                      </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table id="skills-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Experience</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                </table>
+                <div id="change-pages">
+                    <span class="input-number-decrement">–</span><input id="input-number" class="input-number" type="text" value="4" min="0" max="50"><span class="input-number-increment">+</span>                    
+                    <a href="javascript:prevPage()"><i id="btn_prev" class="arrow left"></i></a>
+                    <span id="page"></span>
+                    <a href="javascript:nextPage()"><i id="btn_next" class="arrow right"></i></a>
+                </div>
+                <div id="show-all" onclick="showAll()">Show All</div>
+            </section>
+            
+            <hr>
+
+            <section id="experience-references-section">
+                <h2>Experience and References</h2>
+                <div id="container-body">
+                    <div class="container">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="https://www.kinandcarta.com/en-us/"><img class="job-link" src="https://media.designrush.com/agencies/345890/conversions/logo-logo-profile.jpg" alt="kin and carta" /></a>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <span class="tag tag-teal">Fullstack Engineer</span>
+                                    <span class="tag tag-teal">Consultant</span>
+                                    <span class="tag tag-teal">Java Developer</span>
+                                    <span class="tag tag-teal">Cloud Engineer</span>
+                                    <span class="tag tag-teal">Web Developer</span>
+                                </p>
+                                <h4>Kin + Carta</h4>
+                                <p> Consulted with clients to build enterprise-grade cloud native apps; bridged the gap between 
+                                    elegant front-end design and enterprise back-end architecture with heavy focus on utilizing Java with
+                                    Spring Boot.</p>
+                                <div class="user">
+                                    <img class="user-img" src="https://media.licdn.com/dms/image/C4D03AQHmvBuzaVEMxQ/profile-displayphoto-shrink_100_100/0/1646862076039?e=1719446400&v=beta&t=oMfKnAIw9lpp9rBrIP9bil1Tz1AMAZsz5SyYptmdkoQ" alt="daniel-user" />
+                                    <div class="user-info">
+                                        <small>Daniel Esteban Casas Mateus</small>
+                                        <br>
+                                        <small><small>Fullstack Developer and Systems Engineer</small></small>
+                                        <br><br>
+                                        <a href="https://www.linkedin.com/in/danielcasas24/"><img href="https://www.kinandcarta.com/en-us/" class="contact-job-link" src="./images/linkedin.png"></a>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="https://www.rightbeecider.com/"><img class="job-link" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ92JQnPl0j3W_QVGIyNjp1snm70G2M_NgXTAWu85UYA&s" alt="right bee cider" /></a>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <span class="tag tag-purple">Android Development</span>
+                                    <br>
+                                    <span class="tag tag-purple">UI/UX Designer</span>
+                                </p>
+                                <h4> Right Bee Cider</h4>
+                                <p> Creating an app for local cidery employees to optimize and streamline their cider production. </p>
+                                <div class="user">
+                                    <img class="user-img" src="images/dave.png" alt="dave-user" />
+                                    <div class="user-info">
+
+                                        <small>Dave Mesch</small>
+                                        <br>
+                                        <small><small>Head Cidermaker</small></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="https://www.feinberg.northwestern.edu/sites/neuroscience/index.html"><img class="job-link" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAdVBMVEVZLIL//f1OFXvJvdPMwNX///5GAHdXKYFeMoZmQItTIH5OF3tTIX6fjLOaha9FAHbw6/GFaqCsm71MEHq4qcbQxtiwoMCnlblJCHiNdab28/ZhOIfWzd1/Y5x0VJRVJoDo4uu/sstrR46Jb6Pe1+Pq5e3GuNE8EIoiAAAC/klEQVR4nO3c3VIiMRBA4QkSRmFcUEQBRfx//0dcQpJOdzJatXuze3G+S3JjnRq7mEmYrgMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/IHFLBvswjDTJv/mr/u/LKY+25lawy+vTanVdZML6bHf6oU5sRqnWC7x9zrIKZYriBXoWP6xLwvEaqlYzj/NygKxWjqW8zdlxhOrZWOtyqVFrJaJ5fztIi8Qq1XF8l2e8ccDsWo2lvMb+bK13XhiWVUs5w/HtNJ33hPLaGKtlnlpcUssq47l/IPM+NnKE0trYjk35Bk/HIhltLH8hcz4mcx4YgUjV5Z/bmc8sYKxWC/tjCdWMBLL+V/zvJxnPLGCsVjOLWTG3xCriLHqrw+v67w+e/LEys6x/Kau9SYz/vI844kVxFiP9dT6KDP+nlhZjHV5XV9aOzvjiRXEWFfLVXWLuJepdZ7xxApSrPmhvrTucp3TN1NiRSlWv21mfN7qOY14YkU5lnl6FWd8eh5PLJFjmadXsdZ73OohlpBY+ulVmvHx0iKWKLHynU2pdX9+DEgsUWLlO5sSy1+Gj4klVKz+sZ7x5+18YgkVq5vc1f+Ih4FYio7VbfcjWz3EEibWsBvZ6iGWMLG65Uddq++JJWys41Uda7ollkjPs/Jj5PVrXet5IFYWY8khtn6yr2J9LomVxVjlEJs9lhVqXQ/EStKGRTnEtnypt3uOxErSVpg6xPZWX1pfxEpyrI38I66/6lqOWFHeZFWH2OauRaxAYqkZX2/1ECuR7Xt1iG352R4WIVanzzqc7mzSZ8dnYo1SsdRB5Wlzwo1Ynf2hU5nxPbHG6FjqoPJDc0NNrOpXYaMHlYkl7A+d+pGDysQSNta0HFS2Wz3ECqofOh2qQ2zE0qpY13IsKx5iI5b2bSy71UOs4PtYwzuxKt/HMls9xAp+iNVfEcv6IZbezidWoF6vEphY3XrP61U09eKeNtZ8RyxjYd78NLeLA6+EAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIC/8xu3viJTnIcmygAAAABJRU5ErkJggg==" alt="northwestern N"/></a>    
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    <span class="tag tag-pink">Project Manager</span>
+                                    <span class="tag tag-pink">Contractor</span>
+                                    <span class="tag tag-pink">Game Developer</span>
+                                    <span class="tag tag-pink">QA Tester</span>
+                                </p>  
+                                <h4>Yessenia Rivera @ Northwestern</h4>                            
+                                <p> 
+                                    Managed development timeline of "Gallery Glimpse," a gamed created for a graduates
+                                    students' PhD project. Assisted in backend development as well as testing.
+                                </p>
+                                <div class="user">
+                                    <img class="user-img" src="https://media.licdn.com/dms/image/C4E03AQGkTm2-ONgUig/profile-displayphoto-shrink_800_800/0/1646166411283?e=1719446400&v=beta&t=jE2dxvPwEy2R6P6niJjK-Y9S7g5O8C0RCtB_GY-oUzw" alt="yess-user" />
+                                    <div class="user-info">
+                                        <small><strong>Yessenia Rivera</strong></small>
+                                        <br>
+                                        <small><small>Northwestern PhD Student</small></small>
+                                        <br><br>
+                                        <a href="https://www.linkedin.com/in/yess-rivera/"><img class="contact-job-link" src="./images/linkedin.png"></a> 
+                                        <a href="mailto:shina4321@gmail.com"><img class="contact-job-link" src="./images/email.png"></a>       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+          
+        <section id="contact-and-links-section">
+            <div class="bottom-container">
+                <a href="mailto:k.o.kassie@gmail.com"><img class="button-images-for-links" title="Email Me!" src="/images/email.png"></a>
+                <a href="https://www.linkedin.com/in/kassandra-davida-ortega" title="Look at my Linkedin"><img class="button-images-for-links" src="/images/linkedin.png"></a>
+                <a href="files/RESUME ORTEGA KASSANDRA D.pdf"target="_blank" title="Review my Resume"><img class="button-images-for-links" src="/images/resume.png"></a>
+                <a href="https://github.com/kortega18" title="Glance at my Github"><img class="button-images-for-links" src="/images/github.png"></a>
+                <br>
+                <a href="acknowledgment.html" class="bot-links">Acknowledgments</a>
+                <p class="copyright">© 2023 Kassandra D Ortega</p>
+            </div> 
+        </section>
+        
+       <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/skills.js"></script>
+    </body>
+</html>

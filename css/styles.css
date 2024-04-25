@@ -1,0 +1,621 @@
+/************************************** TAGS **************************************/
+body {
+    color:#40514E;
+    margin: 0px;
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #66BFBF;
+    font-size: 5rem;
+    margin: 50px auto 0px;
+    font-family: 'Sacramento', cursive;
+    line-height: 2;
+    text-align: center;
+}
+
+h2 {
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+p {
+    line-height: 2;
+}
+
+hr {
+    border: 10px dotted #EAF6F6;
+    border-bottom: none;
+    height: 1px;
+    width: 50%;
+    margin: 100px auto;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bot-links {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.visit-employer {
+    padding-left: 0px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 5%;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    color: #11999E;
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 10;
+    width: 0%;
+    background-color: #11999E;
+    height: 2px;
+    transition: 300ms all;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/*********************************** PSEUDO-CLASSES *********************************/
+a:hover { 
+    text-decoration: none; 
+    color: #C8DED8;
+}
+
+/************************************** CLASSES **************************************/
+.top-container {
+    background-color: #E4F9F5;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    width: 100%;
+    visibility: visible;
+}
+
+.middle-container {
+    padding: 50px 0 100px 0;
+}
+
+.bottom-container {
+    position: relative;
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+    text-align: center;
+}
+
+.pro{
+    text-decoration: underline;
+}
+
+.talk {
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+}
+
+.notClouds-left {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.notClouds-right {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.me {
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: justify;
+}
+
+.acknowledge {
+    height: 150px;
+}
+
+.acko {
+    width: 50%;
+    margin: 50px auto 50px auto;
+}
+
+.contact-me {
+    width: 50%;
+    margin: 40px auto 60px;
+    text-align: center;
+}
+
+.copyright {
+    color:white;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+/******************************** DROPDOWN BUTTON *******************************/
+.dropdown {
+    visibility: hidden;
+    height: 0px;
+}
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #E4F9F5;
+    border-radius: 50%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E4F9F5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: auto;
+    width: 100%
+}
+
+.dropdown-content a {
+    color: #11999E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #11999E;
+    color:#C8DED8;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #11999E;
+    margin: 6px 0;
+    transition: 0.8s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/******************************** EXPERIENCE SECTION *******************************/
+#container-body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #10182f;
+}
+
+.container {
+    display: flex;
+    width: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-header {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+}
+  
+.tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+ }
+
+.tag-teal {
+    background-color: #47bcd4;
+}
+
+.tag-purple {
+    background-color: #5e76bf;
+}
+  
+.tag-pink {
+    background-color: #cd5b9f;
+}
+  
+.card-body p {
+    font-size: 13px;
+}
+  
+.user {
+    display: flex;
+    margin-top: auto;
+}
+
+.user-info {
+    width: 210px;
+    height: 110px;
+}
+  
+.user-img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-info h5 {
+    margin: 0;
+}
+
+.user-info small {
+    color: #545d7a;
+}
+
+/******************************** TABLE SORT *******************************/
+.table-h2 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-left: 20%;
+}
+
+.table-header {
+    background-color: #66BFBF;
+    height: 80px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+th {
+    cursor: pointer;
+} 
+
+thead:first-child{ 
+    border-bottom: 1px solid #555;
+    border-color: #deebeb;
+}
+
+table {
+    width: 100%;
+    margin: 0px auto 0px auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    height: 30px;
+    color: black;
+}
+
+td {
+    width: 20%;
+    padding-right: 20px;
+}
+
+tr {
+    height: 75px;
+}
+
+#skills-table tbody tr:hover {background-color: #E4F9F5;}
+
+/********************** PAGE CHANGE DIV AND ARROWS ************************/
+#change-pages {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20%;
+    visibility: visible;
+}
+
+.arrow {
+    border: solid #66BFBF;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+} 
+
+#show-all {
+    text-align: right;
+    padding-top: 5px;
+    color: #11999E;
+    display: inline-block;
+    float: right;
+    padding-right: 20%;
+    cursor: pointer;
+}
+
+#show-all:hover {
+    color: #E4F9F5;
+}
+
+/****************** INCREASE AND DESCREASE ITEMS SHOWN PER PAGE ********************/
+
+.input-number {
+    width: 20px;
+    padding: 0 12px;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+    border: 1px solid #ccc;
+    height: 20px;
+    user-select: none;
+}
+
+.input-number-decrement,
+.input-number-increment {
+    display: inline-block;
+    width: 30px;
+    line-height: 18px;
+    background: #E4F9F5;
+    color: #66BFBF;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-number-decrement:active,
+.input-number-increment:active {
+    background: #C8DED8;
+}
+
+.input-number-decrement {
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-number-increment {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    margin-right: 5%;
+}
+
+/****************** SEARCH ICON ********************/
+#search-body {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 60px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+}
+
+.input-box.open {
+    max-width: 350px;
+}
+  
+.input-box input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+    visibility: hidden;
+}
+  
+.input-box.open input {
+    padding: 0 15px 0 65px;
+    visibility: visible;
+}
+  
+.input-box .search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+  
+.input-box.open .search {
+    border-radius: 6px 0 0 6px;
+}
+
+.search .search-icon {
+    font-size: 30px;
+    color: #1c1c1c;
+}
+
+.input-box .close-icon {
+    position: absolute;
+    top: 50%;
+    right: -45px;
+    font-size: 30px;
+    color: #1c1c1c;
+    padding: 5px;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.input-box.open .close-icon {
+    transform: translateY(-50%) rotate(180deg);
+    pointer-events: auto;
+    opacity: 1;
+} 
+
+/****************** JOB INFO ********************/
+.job-link {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform .2s;
+}
+
+.job-link:hover {
+    transform: scale(1.5); 
+}
+
+.contact-job-link {
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-job-link:hover {
+    opacity: 0.5;
+}
+
+.button-images-for-links {
+    height: 30px;
+    padding: 10px;
+}
+
+.button-images-for-links:hover {
+    opacity: 0.4;
+}
+
+/************ HOVER POPOVER *************/
+
+/****************** MEDIA SCREEN ********************/
+@media screen and (max-width: 760px) {
+    .top-container {
+        visibility: hidden;
+    }
+
+    .dropdown {
+        position: fixed;
+        top: 5%;
+        right: 10%;
+        z-index: 1030;
+        width: 10%;
+        height: 22px;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 728px) {
+
+    .table-h2 {
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: normal;
+        padding-bottom: 40px;
+        padding-top: 30px;
+        padding-left: 20%;
+    }
+}

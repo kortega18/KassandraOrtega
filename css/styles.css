@@ -352,11 +352,6 @@ th {
     cursor: pointer;
 } 
 
-thead:first-child{ 
-    border-bottom: 1px solid #555;
-    border-color: #deebeb;
-}
-
 table {
     width: 100%;
     margin: 0px auto 0px auto;
@@ -379,7 +374,9 @@ tr {
     height: 75px;
 }
 
-#skills-table tbody tr:hover {background-color: #E4F9F5;}
+#skills-table tr:not(.tr-header):hover {
+    background-color: #E4F9F5;
+}
 
 /********************** PAGE CHANGE DIV AND ARROWS ************************/
 #change-pages {
@@ -591,7 +588,7 @@ tr {
 /************ HOVER POPOVER *************/
 
 /****************** MEDIA SCREEN ********************/
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 780px) {
     .top-container {
         visibility: hidden;
     }
